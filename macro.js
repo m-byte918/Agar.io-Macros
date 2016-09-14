@@ -4,11 +4,13 @@
 // @description  13 macro's for feeding, linesplits, tricksplits, etc. And enables show mass and skip stats by default :)
 // @author       NatsuTheGreat, edited by Megabyte918
 // @match        http://agar.io/*
+// @match        http://play.ogarul.tk/*
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
+document.getElementById("nick").maxLength = "100";
 
 //List instructions
 document.getElementById("instructions").innerHTML += "<center><span class='text-muted'><span data-itr='instructions_w'> Press & hold <b>W</b> or <b>Q</b> for macro feed</span></span></center>";
