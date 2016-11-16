@@ -4,7 +4,7 @@
 // @description  13 macro's for feeding, linesplits, tricksplits, etc. And enables show mass and skip stats by default :)
 // @author       NatsuTheGreat, edited by Megabyte918
 // @match        http://agar.io/*
-// @match        http://play.ogarul.tk/*
+// @match        http://old.ogarul.io/*
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
@@ -12,7 +12,7 @@ document.getElementById("nick").maxLength = "100";
 
 //List instructions
 var i = document.getElementById("instructions");
-i.innerHTML += "<center>Press & hold <b>W</b> or <b>Q</b> for macro feed</center>";
+i.innerHTML += "<center>Press & hold <b>W</b>for macro feed</center>";
 i.innerHTML += "<center>Press <b>E</b>, <b>T</b>, or <b>4</b> to split 4x</center>";
 i.innerHTML += "<center>Press <b>A</b> or <b>3</b> to split 3x</center>";
 i.innerHTML += "<center>Press <b>D</b> or <b>2</b> to split 2x</center>";
@@ -36,10 +36,6 @@ var canFeed = false;
 function keydown(event) {
     switch (event.keyCode) {
         case 87: //Feeding Macro (w)
-            canFeed = true;
-            feed();
-            break;
-        case 81: //Feeding Macro (q)
             canFeed = true;
             feed();
             break;
@@ -105,9 +101,9 @@ function keydown(event) {
     }
 }
 
-//When a player lets go of Q or W, stop feeding
+//When a player lets go of W stop feeding
 function keyup(event) {
-    if (event.keyCode == 87 || event.keyCode == 81)
+    if (event.keyCode == 87)
         canFeed = false;
 }
 
