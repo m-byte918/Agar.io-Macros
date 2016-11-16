@@ -4,7 +4,7 @@
 // @description  13 macro's for feeding, linesplits, tricksplits, etc. And enables show mass and skip stats by default :)
 // @author       NatsuTheGreat, edited by Megabyte918
 // @match        http://agar.io/*
-// @match        http://play.ogarul.tk/*
+// @match        http://old.ogarul.io/*
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
@@ -101,7 +101,7 @@ function keydown(event) {
     }
 }
 
-//When a player lets go of Q or W, stop feeding
+//When a player lets go of W stop feeding
 function keyup(event) {
     if (event.keyCode == 87)
         canFeed = false;
