@@ -12,7 +12,7 @@ document.getElementById("nick").maxLength = "100";
 
 //List instructions
 var i = document.getElementById("instructions");
-i.innerHTML += "<center>Press & hold <b>W</b>for macro feed</center>";
+i.innerHTML += "<center>Press & hold <b>W</b> for macro feed</center>";
 i.innerHTML += "<center>Press <b>E</b>, <b>T</b>, or <b>4</b> to split 4x</center>";
 i.innerHTML += "<center>Press <b>A</b> or <b>3</b> to split 3x</center>";
 i.innerHTML += "<center>Press <b>D</b> or <b>2</b> to split 2x</center>";
